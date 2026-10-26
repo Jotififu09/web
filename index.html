@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="Interculturalidad.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raíces que se encuentran – App de reencuentros familiares</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="Interculturalidad.Js"></script>
+<body>
+  <main>
+    <section class="sec on" id="inicio">
+      <div class="hero">
+        <h1>Raíces que se encuentran</h1>
+        <p>Prototipo de app de reencuentros familiares. Tres familias nicaragüenses, 4 generaciones cada una, una sola conversación sobre interculturalidad.</p>
+      </div>
+      
+      <h2 style="margin-top:20px">Elige una familia</h2>
+      <div id="fams"></div>
+      
+      <div class="card">
+        <b>Integrantes del grupo 2M5-SIS-S:</b> María Mercedes Estrada Reyes, Joseph Evian González Patiño y Manuel Ríos Lara. Docente: Lic. Clara Wilford. UNI-RUSB, Interculturalidad, segundo parcial.
+      </div>
+    </section>
+
+    <section class="sec" id="arbol">
+      <h2>Árbol familiar</h2>
+      <select id="famSel" aria-label="Familia"></select>
+      <div id="tree"></div>
+      <div class="card" id="det">
+        <i>Toca a una persona para ver su ficha etnográfica.</i>
+      </div>
+    </section>
+
+    <section class="sec" id="rutas">
+      <h2>Rutas y reencuentros</h2>
+      <p style="color:var(--mu)">Lugares de origen y movimientos que conectan a las familias. Filtra por familia.</p>
+      <div class="row" id="rf"></div>
+      <div class="card" id="rl"></div>
+    </section>
+
+    <section class="sec" id="patrones">
+      <h2>Patrones del grupo</h2>
+      <h3>Comunes</h3>
+      <div id="pc"></div>
+      <h3>Diferentes</h3>
+      <div id="pd"></div>
+    </section>
+
+    <section class="sec" id="reflex">
+      <h2>Memorias familiares</h2>
+      <p style="color:var(--mu)">Un espacio para guardar recuerdos, recetas, tradiciones o historias.</p>
+      <div class="card">
+        <input id="mn" placeholder="Tu nombre">
+        <textarea id="mt" rows="3" placeholder="Una receta, tradición o lugar de tu familia…"></textarea>
+        <button class="go" id="mb">Guardar memoria</button>
+      </div>
+      <div id="ml"></div>
+    </section>
+
+    <section class="sec" id="info">
+      <h2>Fuentes y créditos</h2>
+      <div class="card">
+        <b>Fuentes académicas e institucionales (verificar citas completas antes de entregar)</b>
+        <ol>
+          <li>Constitución Política de la República de Nicaragua, Art. 8 y Art. 11 (Asamblea Nacional).</li>
+          <li>INIDE (2006). VIII Censo de Población y IV de Vivienda 2005: Población étnica y lenguas.</li>
+          <li>Walsh, C. (2009). Interculturalidad, Estado, Sociedad. Universidad Andina Simón Bolívar / Abya-Yala.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <b>Créditos:</b> datos etnográficos obtenidos por entrevistas familiares de los integrantes; genogramas y reportes del primer parcial del grupo.
+      </div>
+    </section>
+  </main>
+  
+  <nav id="nav"></nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
